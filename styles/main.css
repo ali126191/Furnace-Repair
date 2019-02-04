@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: black;
+  background-color: #efefef;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+}
+
+/* SECTIONS */
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid rgb(177, 172, 172);
+  margin: 20px;
+  color: #333;
+  font-weight: 300;
+  font-size: 3rem;
+  background: #ffffff;
+}
+
+section {
+  padding: 20px 20px;
+  margin: auto;
+  background: #ffffff;
+}
+
+/* HEADER */
+
+#header {
+  padding: 20px;
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  opacity: 0.88;
+  background: #35424a;
+  border-bottom: 2px solid #e8491d;
+}
+
+#header h2 {
+  color: white;
+  cursor: default;
+}
+
+#links {
+  margin-right: 20px;
+}
+
+#links ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+#links ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 0px solid transparent;
+  transition: border 150ms, padding 150ms;
+  font-size: 16px;
+}
+
+#links ul li a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 15px;
+}
+
+/* LANDING */
+
+#landing {
+  background: linear-gradient(rgba(100, 100, 100, 0.5),
+    rgba(100, 100, 100, 0.5)),
+    url("https://cdn.pixabay.com/photo/2014/08/26/21/27/service-428540__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  padding: 120px 20px;
+}
+
+.Card {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 70%;
+  padding: 50px 15px;
+  color: white;
+}
+
+.Card h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.Card h4 {
+  font-size: 1.5rem;
+}
+
+/* ABOUT */
+section#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 1440px;
+  padding-top: 20px;
+}
+
+section#about img {
+  width: 100%;
+  max-height: 700px;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+
+section#about p {
+  font-size: 16px;
+  /* margin: 10px; */
+}
+
+/* SERVICES */
+
+#services {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#services h3 {
+  padding: 20px;
+}
+
+#services .squares {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#services .squares .square {
+  flex: 1 1 380px;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+}
+
+#services .squares .square img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px black;
+}
+
+#services .squares .square p {
+  font-size: 16px;
+}
+
+/* CONTACT */
+section#contact {
+  width: 100%;
+  text-align: center;
+  max-width: 1440px;
+}
+
+section#contact h3 {
+  font-size: 2rem;
+  padding: 30px 10px;
+}
+
+section#contact #map {
+  width: 100%;
+  height: auto;
+}
+
+section#contact .fab {
+  font-size: 45px;
+  margin: 25px;
+  color: #e8491d;
+  cursor: pointer;
+}
+
+section#contact .communication {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  max-width: 750px;
+  justify-content: space-evenly;
+  margin: 60px auto;
+}
+
+section#contact .cellphone,
+section#contact .email {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section#contact p {
+  font-size: 30px;
+}
+
+section#contact hr {
+  max-width: 1000px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+section#contact .far,
+section#contact .fas {
+  margin: 20px;
+  color: #e8491d;
+  font-size: 40px;
+}
+
+section#contact #phone {
+  transform: rotate(100deg);
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #e8491d;
+}
+
+@media only screen and (max-width: 780px) {
+  section {
+    padding: 30px 10px;
+  }
+
+  .Card h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .Card h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  section#contact p {
+    font-size: 25px;
+  }
+
+  section#contact .far,
+  section#contact .fas {
+    margin: 20px;
+    color: #e8491d;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 30px 10px;
+  }
+
+  #landing {
+    padding: 80px 20px;
+  }
+
+  #header h2,
+  #links {
+    margin: auto;
+  }
+
+  #links ul li a:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 12px;
+  }
+
+  .Card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .Card h1 {
+    font-size: 2rem;
+  }
+
+  #services .squares {
+    flex-wrap: wrap;
+  }
+
+  section#contact .communication {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-evenly;
+  }
+
+  section#contact p {
+    font-size: 19px;
+  }
+
+  section#contact .far,
+  section#contact .fas {
+    margin: 10px 0;
+    color: #e8491d;
+    font-size: 30px;
+  }
+}
